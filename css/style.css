@@ -1,0 +1,98 @@
+/* #container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#board-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  border: 1px solid black;
+  align-content: flex-start;
+}
+
+#board-container div {
+  background-color: blue;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+} */
+
+/* General reset for a cleaner look */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* Stack controls above the board */
+  gap: 20px;
+  align-items: center;
+}
+
+#button-container {
+  display: flex;
+  gap: 10px;
+  background: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input,
+button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#board-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Use 'vmin' - this picks the smaller of width or height */
+  /* 70vmin means 70% of the smaller screen dimension */
+  width: 70vmin;
+  height: 70vmin;
+
+  /* Hard limits so it doesn't get ridiculously huge on a 4K monitor */
+  max-width: 600px;
+  max-height: 600px;
+
+  background-color: #000;
+  border: 4px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* We'll handle the blue background in the JS or via a class */
+.square {
+  background-color: #1e3a8a; /* A nicer shade of blue */
+  border: 0.1px solid rgba(255, 255, 255, 0.05);
+}
