@@ -5,7 +5,7 @@ A dynamic, browser-based sketching board built with vanilla JavaScript, HTML5, a
 [Image of Etch-A-Sketch grid interface]
 
 ## 🚀 Live Demo
-[Click here to play the game!](https://luismiguelmiranda92.github.io/etch-a-sketch-odin-project/)
+[View the Live Project here](https://luismiguelmiranda92.github.io/etch-a-sketch-odin-project/)
 
 ## ✨ Features
 - **Dynamic Grid Generation:** Choose any board size between 1x1 and 100x100.
